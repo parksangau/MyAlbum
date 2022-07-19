@@ -14,8 +14,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func challenge(_ sender: UIButton) {
-        let alert = UIAlertController(title: "도오오오전입니다", message: "도오오전 과제는 너무 행복해!", preferredStyle: .alert)
+    @IBAction func showAlert(_ sender: Any) {
+        let alert = UIAlertController(title: "Hello", message: "My First App!", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
