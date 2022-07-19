@@ -11,9 +11,10 @@ class ViewController: UIViewController {
     
     var currentValue = 0
     
+    @IBOutlet var priceLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        priceLabel.text = "￦\(currentValue)"
     }
 
     @IBAction func showAlert(_ sender: Any) {
@@ -27,6 +28,7 @@ class ViewController: UIViewController {
         
         let randomPrice = arc4random_uniform(10000) + 1
         currentValue = Int(randomPrice)
+        priceLabel.text = "￦\(currentValue)"
     }
     
 }
