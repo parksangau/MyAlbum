@@ -36,6 +36,7 @@
                                     <color key="baseForegroundColor" systemColor="systemPinkColor"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="refreshButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sev-9W-bpY"/>
                                     <action selector="showAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ehm-58-9hL"/>
                                 </connections>
                             </button>

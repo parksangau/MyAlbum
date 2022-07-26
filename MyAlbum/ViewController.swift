@@ -32,5 +32,7 @@ class ViewController: UIViewController {
         currentValue = Int(randomPrice)
         priceLabel.text = "￦\(currentValue)"
     }
+    @IBAction func refreshButton(_ sender: Any) {
+    }
 }
 
